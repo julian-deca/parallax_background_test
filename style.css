@@ -27,6 +27,111 @@
   font-size: 20px;
   padding: 10px;
   top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 60%;
+  transform: translateX(-60%);
+}
+#speedLabel {
+  background-color: #6666665d;
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  padding: 10px;
+  top: 70px;
+  left: 35%;
+  transform: translateX(-35%);
+}
+
+#speed {
+  position: absolute;
+  padding: 10px;
+  width: 500px;
+  top: 20px;
+  left: 30%;
+  transform: translateX(-30%);
+}
+
+input[type="range"] {
+  height: 32px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 16px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #b6b6b6;
+  border-radius: 25px;
+  border: 1px solid #8a8a8a;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #828282;
+  border: 1px solid #8a8a8a;
+  height: 24px;
+  width: 35px;
+  border-radius: 6px;
+  background: #dadada;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #b6b6b6;
+}
+input[type="range"]::-moz-range-track {
+  height: 16px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #b6b6b6;
+  border-radius: 25px;
+  border: 1px solid #8a8a8a;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #828282;
+  border: 1px solid #8a8a8a;
+  height: 24px;
+  width: 35px;
+  border-radius: 6px;
+  background: #dadada;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  height: 16px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #b6b6b6;
+  border: 1px solid #8a8a8a;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #b6b6b6;
+  border: 1px solid #8a8a8a;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #828282;
+  border: 1px solid #8a8a8a;
+  height: 24px;
+  width: 35px;
+  border-radius: 6px;
+  background: #dadada;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #b6b6b6;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #b6b6b6;
 }

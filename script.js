@@ -3,7 +3,9 @@ const ctx = canvas.getContext("2d");
 const fullScreenButton = document.getElementById("fullScreenButton");
 canvas.width = 1920;
 canvas.height = 1080;
-const gamespeed = 20;
+let gamespeed = 5;
+const speed = document.getElementById("speed");
+const speedLabel = document.getElementById("speedLabel");
 
 function toggleFullScreen() {
   if (!document.fullscreenElement) {
@@ -15,6 +17,11 @@ function toggleFullScreen() {
   }
 }
 fullScreenButton.addEventListener("click", toggleFullScreen);
+
+speed.onchange = () => {
+  speedLabel.innerHTML = speed.value;
+  gamespeed = speed.value;
+};
 
 class Layer {
   constructor(image, speedModifier) {
